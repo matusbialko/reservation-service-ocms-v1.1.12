@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Review
+
+# Model Form Field configuration
+form: $/app/review/models/review/fields.yaml
+
+# Model Class name
+modelClass: App\Review\Models\Review
+
+# Default redirect location
+defaultRedirect: app/review/reviews
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: app/review/reviews/update/:id
+    redirectClose: app/review/reviews
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: app/review/reviews
+    redirectClose: app/review/reviews
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

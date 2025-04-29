@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Service
+
+# Model Form Field configuration
+form: $/app/service/models/service/fields.yaml
+
+# Model Class name
+modelClass: App\Service\Models\Service
+
+# Default redirect location
+defaultRedirect: app/service/services
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: app/service/services/update/:id
+    redirectClose: app/service/services
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: app/service/services
+    redirectClose: app/service/services
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
