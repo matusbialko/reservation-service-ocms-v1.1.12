@@ -105,7 +105,7 @@ class UpdateManager
         $this->versionManager = VersionManager::instance();
         $this->tempDirectory = temp_path();
         $this->baseDirectory = base_path();
-        $this->disableCoreUpdates = Config::get('cms.disableCoreUpdates', false);
+        $this->disableCoreUpdates = Config::get('cms.disableCoreUpdates', true);
         $this->bindContainerObjects();
 
         /*
